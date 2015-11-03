@@ -7,7 +7,7 @@ A light-weight Twitter timeline module for Magento.
 
 ### Twitter API v1.1 OAuth
 
-As always, any use of the Twitter API v1.1 requires authentication. You will first need to visit [dev.twitter.com](http://dev.twitter.com) to set up an app instance, which will give you the following required keys which can be entered at *SYSTEM > CONFIGURATION > TWITTER FEED > TWITTER API CONNECTION
+As always, any use of the Twitter API v1.1 requires authentication. You will first need to visit [dev.twitter.com](http://dev.twitter.com) to set up an app instance, which will give you the following required keys which can be entered at *SYSTEM > CONFIGURATION > TWITTER FEED > TWITTER API CONNECTION*
 
 - Consumer Key
 - Consumer Secret
