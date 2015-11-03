@@ -24,7 +24,8 @@ class Bl_Twitterfeed_Block_Tweets extends Mage_Core_Block_Template
 
         $tweet_found = false;
 
-        date_default_timezone_set('Europe/London');
+        $timezone = Mage::getStoreConfig('general/locale/timezone');
+        date_default_timezone_set($timezone);
 
         // Cache file not found, or old. Authenticae app.
         $twitterOAuthConnection = new TwitterOAuth($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
