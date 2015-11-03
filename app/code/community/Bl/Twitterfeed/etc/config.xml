@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Bl_Twitterfeed>
+            <version>1.0.0</version>
+        </Bl_Twitterfeed>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <bltwitterfeed module="Bl_Twitterfeed">
+                    <file>bl_twitterfeed.xml</file>
+                </bltwitterfeed>
+            </updates>
+        </layout>
+    </frontend>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <twitterfeed translate="title" module="twitterfeed">
+                                            <title>twitterfeed</title>
+                                            <sort_order>110</sort_order>
+                                        </twitterfeed>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <global>
+        <models>
+            <bltwitterfeed>
+                <class>Bl_Twitterfeed_Model</class>
+            </bltwitterfeed>
+        </models>
+        <blocks>
+            <bltwitterfeed>
+                <class>Bl_Twitterfeed_Block</class>
+            </bltwitterfeed>
+        </blocks>
+    </global>
+</config>

@@ -1,0 +1,35 @@
+/* Twitterfeed parent container =================================================================== */
+.twitterfeed {
+    background-color: #F8F8F8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+/* Clear above and below just in case */
+.twitterfeed::after,
+.twitterfeed::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Tweets block =================================================================================== */
+.twitterfeed__tweets {
+    list-style: none outside none;
+}
+
+/* Tweet block ==================================================================================== */
+.twitterfeed__tweets .twitterfeed__tweets__tweet {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.twitterfeed__tweets .twitterfeed__tweets__tweet:last-child {
+    border-bottom: none;
+}
+
+.twitterfeed__tweets .twitterfeed__tweets__tweet time {
+    display: block;
+}

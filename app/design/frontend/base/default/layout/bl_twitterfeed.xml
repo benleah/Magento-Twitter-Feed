@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/bl-twitterfeed.css</name>
+                <params/>
+            </action>
+        </reference>
+        <reference name="right">
+            <block type="bltwitterfeed/tweets" name="bltwitterfeed.tweets" as="bltwitterfeed.tweets" template="bl_twitterfeed/tweets.phtml" />
+        </reference>
+    </default>
+</layout>
